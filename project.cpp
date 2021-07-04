@@ -1,4 +1,4 @@
-// Team project Justin Pilecki, Siyang Ren
+// Team project J Pilecki, Siyang Ren
 #include<iostream>
 #include<string>
 #include<cstdlib>
@@ -9,8 +9,8 @@ void print();
 const int total=9;
 std::string weekday[7]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
 std::string cropname[total]={"Cabbage", "Banana", "Bean", "Citrus", "Wheat", "Onion", "Tomato", "Soybean", "Pepper"};
-    double totalgrowday[total]={130, 330, 95, 310, 135, 80, 155, 140, 165}; //days
-    double totalwaterneed[total]={430,1800,400 , 1050, 530, 450, 600, 580,760}; //mm total
+    double totalgrowday[total]={130, 330, 95, 310, 135, 80, 155, 140, 165};
+    double totalwaterneed[total]={430,1800,400 , 1050, 530, 450, 600, 580,760};
     double averagewatercrop[total];
     double Maverage[total];
     double Taverage[total];
@@ -46,8 +46,6 @@ std::cin.ignore(1000,10);
 std::cout<<"\n\n\n";
 for(int i=0;i<total;i++){
    averagewatercrop[i]=totalwaterneed[i]/totalgrowday[i];
-    //std::cout<<"Average water need each crop is: "<<averagewatercrop[i]<<"\n";
-
 }
 
 
@@ -353,15 +351,15 @@ std::cin >> fert;
 if (fert == 'Y' || fert == 'y'){
 std::cout << "No additional fertilizer need be applied. Once a month is sufficient.\n";
 break;
-}//if
+}
 else if (fert == 'N' || fert == 'n'){
 std::cout << "Apply fertilizer to each plant, make note of the date it is given.\n";
 break;
-}//elseif
+}
 else
 std::cout << "That is not a valid answer, try again.\n\n";
 }
 
-}//while
+}
 
 
